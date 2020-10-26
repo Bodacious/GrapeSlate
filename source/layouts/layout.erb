@@ -96,6 +96,12 @@ under the License.
             <% end %>
           </li>
         <% end %>
+
+        <li>
+          <a href="#resources" class="toc-h1 toc-link" data-title="Resources">
+            Resources
+          </a>
+        </li>
       </ul>
       <% if current_page.data.toc_footers %>
         <ul class="toc-footer">
@@ -108,7 +114,11 @@ under the License.
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
+
         <%= page_content %>
+        <h1 id="resources">Resources</h1>
+        <%= partial "generated" %>
+
       </div>
       <div class="dark-box">
         <% if language_tabs.any? %>
